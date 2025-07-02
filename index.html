@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai International Guest House | Book Stay in Salt Lake, Kolkata</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Book your stay at Sai International Home Away From Home Guest House in AC-70, Salt Lake, Sector 1, Kolkata. Comfortable rooms near 3 No. Island. Call +917980273844 or +919038962227.">
+    <meta name="keywords"
+        content="Sai International Guest House, Guest House Kolkata, Salt Lake Sector 1 Stay, Budget Stay Kolkata, Guest House near 3 No. Island, Home Away From Home, Book Guest House Kolkata">
+    <meta name="author" content="Sai International Guest House">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.placename" content="Salt Lake, Kolkata, West Bengal, India">
+    <meta name="geo.region" content="IN-WB">
+    <meta name="geo.position" content="22.5946;88.4026">
+    <meta name="ICBM" content="22.5946, 88.4026">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Sai International Guest House - Salt Lake, Kolkata">
+    <meta property="og:description"
+        content="Book a cozy, affordable stay at Sai International Guest House, located in Salt Lake, Sector 1, near 3 No. Island, Kolkata - 700064.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sai-booking-v1-test.netlify.app">
+    <meta property="og:image" content="./assets/images/logo.svg">
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+    <!-- Bootstrap & Icons -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper and Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+
+<body>
+
+    <!-- Header Section Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg main_navbar">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img loading="lazy" src="./assets/images/logo.svg" alt="SAI International Logo">
+                </a>
+
+                <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/rooms.html">Rooms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact Us</a></li>
+                    </ul>
+                    <a href="/assets/images/guest-house-brochure.pdf" target="_blank" class="btn btn-brochure">VIEW
+                        BROCHURE</a>
+                </div>
+
+                <button class="custom-toggler d-lg-none" id="menuToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+
+        <div class="offcanvas-overlay" id="offcanvasOverlay"></div>
+
+        <div class="mobile-offcanvas" id="mobileMenu">
+            <div class="offcanvas-header">
+                <a class="navbar-brand" href="/">
+                    <img loading="lazy" src="./assets/images/logo.svg" alt="SAI Logo">
+                </a>
+                <button class="close-btn" id="menuClose" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="offcanvas-nav">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/about.html" class="nav-link">About Us</a></li>
+                <li><a href="/rooms.html" class="nav-link">Rooms</a></li>
+                <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="/contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <a href="/brochure" class="btn btn-brochure">VIEW BROCHURE</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" aria-labelledby="hero-title">
+            <!-- Text Content -->
+            <header class="hero-text text-center heading-section">
+                <p class="hero-section__subtitle">Welcome to Sai International</p>
+                <h1 id="hero-title" class="hero-section__title">
+                    Discover the art of <br><span>Vacationing</span>
+                </h1>
+            </header>
+        </section>
+
+
+        <!-- Booking Form -->
+        <section class="booking-form-wrapper" aria-labelledby="booking-form-title">
+            <header class="booking-form-header">
+                <h3 id="booking-form-title">Book Your Perfect Stay</h3>
+                <p>Complete the form below to check availability</p>
+            </header>
+
+            <form class="booking-form" id="bookingForm">
+                <input type="text" name="fullName" placeholder="Full Name" required />
+                <input type="tel" name="mobileNumber" placeholder="Mobile Number" required />
+                <input type="text" name="numRooms" placeholder="Number of Rooms" pattern="[0-9]+" required />
+                <input type="text" name="numPeople" placeholder="Number of People" pattern="[0-9]+" required />
+                <input type="email" name="email" placeholder="Email" required />
+
+                <div class="date-input-wrapper">
+                    <button type="button" class="date-input-btn" id="checkInBtn">
+                        <i class="fas fa-calendar-alt date-icon"></i>
+                        <span class="date-text" id="checkInText">Check-in Date</span>
+                    </button>
+                    <input type="date" name="checkIn" id="checkInInput" class="hidden-date-input" required>
+                </div>
+
+                <div class="date-input-wrapper">
+                    <button type="button" class="date-input-btn" id="checkOutBtn">
+                        <i class="fas fa-calendar-alt date-icon"></i>
+                        <span class="date-text" id="checkOutText">Check-out Date</span>
+                    </button>
+                    <input type="date" name="checkOut" id="checkOutInput" class="hidden-date-input" required>
+                </div>
+
+                <button type="submit" class="inquire-btn booking-submit-btn">INQUIRE NOW</button>
+
+                <div class="mt-3 text-center text-success fw-bold success-msg" style="display: none;">
+                    Your inquiry has been submitted successfully! We'll contact you shortly.
+                </div>
+            </form>
+        </section>
+
+
+        <!-- comfort section -->
+        <section class="comfort-section" aria-labelledby="comfort-title">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <article class="heading-section">
+                            <h1 id="comfort-title" class="heading-section__title mt-3">
+                                Experience Comfort at Our Premium Guest House
+                            </h1>
+                            <p class="heading-section__description">
+                                Whether you're visiting for business, leisure, or an extended stay, Sai International
+                                offers a peaceful and homely experience — the perfect choice for those searching for a
+                                guest house in Salt Lake or simply the nearest guest house. With thoughtfully curated
+                                amenities, our home stay guest house ensures comfort and convenience of guest room
+                                service, 24x7 support, and a warm, welcoming environment. Recognized as one of the best
+                                guest houses in Kolkata, we’re often the preferred pick when looking for a guest house
+                                near me, a couple guest house, or a premium guest house for family stay.
+                            </p>
+                        </article>
+
+                        <section class="row row-cols-2 mt-4" aria-label="Guest House Amenities">
+                            <div class="col d-flex align-items-center gap-2">
+                                <div class="feature-icon">
+                                    <img loading="lazy" src="./assets/icon/ac-rooms.svg" alt="Classy Amenities">
+                                </div>
+                                <div class="feature-text">A.C Rooms</div>
+                            </div>
+                            <div class="col d-flex align-items-center gap-2">
+                                <div class="feature-icon">
+                                    <img loading="lazy" src="./assets/icon/wifi.svg" alt="Luxury Lifestyle">
+                                </div>
+                                <div class="feature-text">WIFI Available</div>
+                            </div>
+                            <div class="col d-flex align-items-center mt-4 gap-2">
+                                <div class="feature-icon">
+                                    <img loading="lazy" src="./assets/icon/room-service.svg" alt="Friendly Services">
+                                </div>
+                                <div class="feature-text">24x7 Room Service</div>
+                            </div>
+                            <div class="col d-flex align-items-center mt-4 gap-2">
+                                <div class="feature-icon">
+                                    <img loading="lazy" src="./assets/icon/breakfast.svg" alt="Complimentary Breakfast">
+                                </div>
+                                <div class="feature-text">Complimentary Breakfast</div>
+                            </div>
+                        </section>
+
+                        <button onclick="window.location.href='/about.html'" class="about-btn">ABOUT US</button>
+                    </div>
+
+                    <aside class="col-md-6 order-md-2 order-1 mt-5 mt-md-0 image-wrapper">
+                        <div class="image-container">
+                            <img loading="lazy" src="./assets/images/about-font.jpeg" alt="Main Room"
+                                class="main-image">
+                            <img loading="lazy" src="./assets/images/about-room.jpeg" alt="Decorated Bed"
+                                class="overlay-image">
+                            <div class="experience-badge">11+<br>YEARS</div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="offer-section-custom">
+            <div class="container">
+                <header>
+                    <h2 class="heading-section__title text-center mb-3">
+                        Looking for the Best Guest House in Kolkata? <br />
+                        You’ve Found It!
+                    </h2>
+                </header>
+
+                <nav>
+                    <ul class="offer-tab-nav nav nav-tabs justify-content-center" id="offerRoomTabs" role="tablist">
+                        <li class="offer-tab-item nav-item" role="presentation">
+                            <button class="offer-tab-link nav-link active" id="tab-suite" data-bs-toggle="tab"
+                                data-bs-target="#tabContent-suite" type="button" role="tab"
+                                aria-controls="tabContent-suite" aria-selected="false">Suite Room</button>
+                        </li>
+                        <li class="offer-tab-item nav-item" role="presentation">
+                            <button class="offer-tab-link nav-link " id="tab-super" data-bs-toggle="tab"
+                                data-bs-target="#tabContent-super" type="button" role="tab"
+                                aria-controls="tabContent-super" aria-selected="true">Super Deluxe Room</button>
+                        </li>
+
+                        <li class="offer-tab-item nav-item" role="presentation">
+                            <button class="offer-tab-link nav-link" id="tab-deluxe" data-bs-toggle="tab"
+                                data-bs-target="#tabContent-deluxe" type="button" role="tab"
+                                aria-controls="tabContent-deluxe" aria-selected="false">Deluxe Room</button>
+                        </li>
+                        <li class="offer-tab-item nav-item" role="presentation">
+                            <button class="offer-tab-link nav-link" id="tab-golden" data-bs-toggle="tab"
+                                data-bs-target="#tabContent-golden" type="button" role="tab"
+                                aria-controls="tabContent-golden" aria-selected="false">Gold Room</button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="tab-content mt-4" id="offerRoomTabsContent">
+                    <!-- Suite Room -->
+                    <article class="tab-pane fade show active" id="tabContent-suite" role="tabpanel"
+                        aria-labelledby="tab-suite">
+                        <div class="row">
+                            <div class="col-md-6 position-relative mb-4 mb-md-0">
+                                <div class="offer-room-badge"><span>5+</span><br />ROOMS</div>
+                                <figure class="offer-image-container">
+                                    <img loading="lazy" src="./assets/images/suite-room.avif" class="offer-room-image"
+                                        alt="Suite Room with king-size bed and spacious area" />
+                                </figure>
+                            </div>
+                            <div class="col-md-6 mt-md-5">
+                                <h3 class="heading-section__title">SUITE ROOM</h3>
+                                <p class="heading-section__description">
+                                    Indulge in the ultimate comfort and spaciousness with our Suite Room (231 sq.ft. +
+                                    43 sq.ft. bathroom).
+                                    Perfect for couples and families, this room features a plush king-size bed, private
+                                    bathroom, elegant
+                                    2-seater sofa, and a tea table. Ideal for those seeking a luxurious guest house in
+                                    Kolkata, the Suite Room
+                                    blends style and functionality effortlessly.
+                                </p>
+                                <p class="heading-section__description fw-bold my-3">
+                                    Complimentary: Breakfast, Welcome Drinks, Car Parking, Caretaker, Toiletry Kit.
+                                </p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/rooms.svg"
+                                                    alt="Room size icon" />
+                                            </div>
+                                            <div>Room Size: 274 sq.ft.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/bed.svg"
+                                                    alt="King-size bed icon" />
+                                            </div>
+                                            <div>King-size Bed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/balcony.svg"
+                                                    alt="Spacious room icon" />
+                                            </div>
+                                            <div>Best For Families with Kids / Couples</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <a href="/contact.html" class="btn offer-btn-inquire">INQUIRE NOW</a>
+                                    <a href="/room-details.html?room=suite-room-elegant-and-most-spacious&id=1"
+                                        class="btn offer-btn-detail">VIEW DETAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Super Deluxe Room -->
+                    <article class="tab-pane fade " id="tabContent-super" role="tabpanel" aria-labelledby="tab-super">
+                        <div class="row">
+                            <div class="col-md-6 position-relative mb-4 mb-md-0">
+                                <div class="offer-room-badge"><span>5+</span><br />ROOMS</div>
+                                <figure class="offer-image-container">
+                                    <img loading="lazy" src="./assets/images/super-delux.avif" class="offer-room-image"
+                                        alt="Super Deluxe Room with balcony and king-size bed" />
+                                </figure>
+                            </div>
+                            <div class="col-md-6 mt-md-5">
+                                <h3 class="heading-section__title">SUPER DELUXE ROOM</h3>
+                                <p class="heading-section__description">
+                                    Our Super Deluxe Room (225 sq.ft.) with private balcony offers a perfect blend of
+                                    space and scenic
+                                    comfort. Designed for families / couples, it includes a king-size bed, 2-seater
+                                    sofa, and tea table. If
+                                    you're searching for the best couple guest house in Kolkata, this room ensures a
+                                    peaceful and relaxing
+                                    stay.
+                                </p>
+                                <p class="heading-section__description fw-bold my-3">
+                                    Complimentary: Breakfast, Welcome Drinks, Car Parking, Caretaker, Toiletry Kit,
+                                </p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/rooms.svg"
+                                                    alt="Room size icon" />
+                                            </div>
+                                            <div>Room Size: 225 sq.ft.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/bed.svg"
+                                                    alt="King-size bed icon" />
+                                            </div>
+                                            <div>King-size Bed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/balcony.svg"
+                                                    alt="Balcony available icon" />
+                                            </div>
+                                            <div>Best for Families / Couples (Offers balcony area)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <a href="/contact.html" class="btn offer-btn-inquire">INQUIRE NOW</a>
+                                    <a href="/room-details.html?room=super-deluxe-room-with-private-balcony&id=2"
+                                        class="btn offer-btn-detail">VIEW DETAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <!-- Deluxe Room -->
+                    <article class="tab-pane fade" id="tabContent-deluxe" role="tabpanel" aria-labelledby="tab-deluxe">
+                        <div class="row">
+                            <div class="col-md-6 position-relative mb-4 mb-md-0">
+                                <div class="offer-room-badge"><span>5+</span><br />ROOMS</div>
+                                <figure class="offer-image-container">
+                                    <img loading="lazy" src="./assets/images/delux-room.avif" class="offer-room-image"
+                                        alt="Deluxe Room with king-size bed and cozy design" />
+                                </figure>
+                            </div>
+                            <div class="col-md-6 mt-md-5">
+                                <h3 class="heading-section__title">DELUXE ROOM</h3>
+                                <p class="heading-section__description">
+                                    Compact yet thoughtfully designed, our Deluxe Room (195 sq.ft.) offers all
+                                    essentials for a relaxed
+                                    experience. With a king-size bed, cozy 2-seater sofa, and tea table, it’s ideal for
+                                    those seeking an
+                                    affordable guest house in Kolkata without compromising on comfort.
+                                </p>
+                                <p class="heading-section__description fw-bold my-3">
+                                    Complimentary: Breakfast, Welcome Drinks, Car Parking, Caretaker, Toiletry Kit.
+                                </p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/rooms.svg"
+                                                    alt="Room size icon" />
+                                            </div>
+                                            <div>Room Size: 195 sq.ft.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/bed.svg"
+                                                    alt="King-size bed icon" />
+                                            </div>
+                                            <div>King-size Bed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/balcony.svg"
+                                                    alt="Comfortable for couples icon" />
+                                            </div>
+                                            <div>Best for Families / Couples/ Travelers</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <a href="/contact.html" class="btn offer-btn-inquire">INQUIRE NOW</a>
+                                    <a href="/room-details.html?room=deluxe-room-smart-stays-seamless-comfort&id=3"
+                                        class="btn offer-btn-detail">VIEW DETAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Gold Room -->
+                    <article class="tab-pane fade" id="tabContent-golden" role="tabpanel" aria-labelledby="tab-golden">
+                        <div class="row">
+                            <div class="col-md-6 position-relative mb-4 mb-md-0">
+                                <div class="offer-room-badge"><span>5+</span><br />ROOMS</div>
+                                <figure class="offer-image-container">
+                                    <img loading="lazy" src="./assets/images/gold-room-in-guest-house.avif"
+                                        class="offer-room-image" alt="Gold Room with king-size bed and balcony" />
+                                </figure>
+                            </div>
+                            <div class="col-md-6 mt-md-5">
+                                <h3 class="heading-section__title">GOLD ROOM</h3>
+                                <p class="heading-section__description">
+                                    Our Gold Room (175 sq.ft.) is tailored for travelers looking for quality on a
+                                    budget. Featuring a
+                                    king-size bed, 2-seater sofa, and tea table, this compact yet comfortable room is
+                                    perfect for short or
+                                    extended stays in a budget-friendly guest house near you.
+                                </p>
+                                <p class="heading-section__description fw-bold my-3">
+                                    Complimentary: Breakfast, Welcome Drinks, Car Parking, Caretaker, Toiletry Kit.
+                                    (Offers balcony area)
+                                </p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/rooms.svg"
+                                                    alt="Room size icon" />
+                                            </div>
+                                            <div>Room Size: 225 sq.ft.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/bed.svg"
+                                                    alt="King-size bed icon" />
+                                            </div>
+                                            <div>King-size Bed</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4">
+                                        <div class="offer-feature-box">
+                                            <div class="offer-feature-icon">
+                                                <img loading="lazy" src="./assets/icon/balcony.svg"
+                                                    alt="Suitable for all travelers icon" />
+                                            </div>
+                                            <div>Best For: Families / Couples/ Travelers</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <a href="/contact.html" class="btn offer-btn-inquire">INQUIRE NOW</a>
+                                    <a href="/room-details.html?room=gold-room-comfort-meets-simplicity&id=4"
+                                        class="btn offer-btn-detail">VIEW DETAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Home Gallery Section -->
+        <section class="gallery-home-section py-5">
+            <div class="container">
+                <!-- Text Header -->
+                <header class="mb-5 text-center">
+                    <h2 class="heading-section__title mb-3">Explore Our Space</h2>
+                    <p class="heading-section__description mx-auto">
+                        Step inside Sai International, through our curated gallery. A guest house in salt lake, situated
+                        at the heart of the city Kolkata, from elegant exteriors to cozy interiors, spacious rooms, and
+                        inviting dining areas — experience the comfort and charm before you even arrive.
+                    </p>
+                </header>
+
+                <!-- Gallery Grid -->
+                <div class="row g-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="col-md-6">
+                        <div class="gallery-card position-relative overflow-hidden">
+                            <a href="/gallery.html?type=exterior" aria-label="View Exterior Gallery">
+                                <figure class="m-0">
+                                    <img loading="lazy" src="./assets/images/gallery1.png"
+                                        class="img-fluid w-100 gallery-image"
+                                        alt="Sai International exterior view - guest house in Kolkata">
+                                    <figcaption
+                                        class="gallery-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                        <span class="category">Exterior</span>
+                                        <h3>Exterior gallery</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="col-md-6">
+                        <div class="gallery-card position-relative overflow-hidden">
+                            <a href="/gallery.html?type=rooms" aria-label="View Our Rooms Gallery">
+                                <figure class="m-0">
+                                    <img loading="lazy" src="./assets/images/gallery2.png"
+                                        class="img-fluid w-100 gallery-image"
+                                        alt="Modern and comfortable guest rooms at Sai International">
+                                    <figcaption
+                                        class="gallery-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                        <span class="category"> rooms</span>
+                                        <h3>Our rooms</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="col-md-6">
+                        <div class="gallery-card position-relative overflow-hidden">
+                            <a href="/gallery.html?type=interior" aria-label="View Interior Gallery">
+                                <figure class="m-0">
+                                    <img loading="lazy" src="./assets/images/gallery3.png"
+                                        class="img-fluid w-100 gallery-image"
+                                        alt="Interior decor of Sai International guest house">
+                                    <figcaption
+                                        class="gallery-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                        <span class="category">Interior</span>
+                                        <h3>Interior gallery</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="col-md-6">
+                        <div class="gallery-card position-relative overflow-hidden">
+                            <a href="/gallery.html?type=dining" aria-label="View Dining Area Gallery">
+                                <figure class="m-0">
+                                    <img loading="lazy"
+                                        src="./assets/images/gallery/dining/large-dining-space-sai-international.avif"
+                                        class="img-fluid w-100 gallery-image"
+                                        alt="Dining area at Sai International guest house">
+                                    <figcaption
+                                        class="gallery-overlay d-flex flex-column justify-content-end align-items-center text-center">
+                                        <span class="category"> dining</span>
+                                        <h3>Our dining</h3>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center mt-5">
+                    <a href="/gallery.html" class="btn btn-outline-dark px-4 py-2 view-all-btn" id="viewAllGallery">
+                        View All
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Book Inquire Section -->
+        <section class="booking-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4">
+                        <h2 class="heading-section__title">Book Now!</h2>
+                        <p class="heading-section__description">Book your stay with us for a relaxing and memorable
+                            experience. Contact now to get the best offer on your bookings.
+                        </p>
+                        <div class="booking-image">
+                            <img loading="lazy" src="./assets/images/guest-house.png" alt="Guest House"
+                                class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 px-lg-5">
+                        <div class="form-box">
+                            <h3 class="heading-section__title mb-3">Contact Now</h3>
+                            <form class="inquiry-form" novalidate>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control user-name" placeholder="Full Name"
+                                        maxlength="50" required>
+                                    <div class="error-message name-error">Please enter a valid name (letters and spaces
+                                        only, max 50 characters).</div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control user-phone" placeholder="Phone Number"
+                                        required>
+                                    <div class="error-message phone-error">Please enter a valid 10-digit phone number.
+                                    </div>
+                                </div>
+                                <div class="row g-2 mb-3">
+                                    <div class="col-md-6">
+                                        <div class="date-input-wrapper">
+                                            <button type="button" class="date-input-btn check-in-btn">
+                                                <i class="fas fa-calendar-alt date-icon"></i>
+                                                <span class="date-text check-in-text">Check-in Date</span>
+                                            </button>
+                                            <input type="date" name="checkInDate"
+                                                class="hidden-date-input check-in-date" required>
+                                        </div>
+                                        <div class="error-message check-in-error">Please select a valid check-in date.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="date-input-wrapper">
+                                            <button type="button" class="date-input-btn check-out-btn">
+                                                <i class="fas fa-calendar-alt date-icon"></i>
+                                                <span class="date-text check-out-text">Check-out Date</span>
+                                            </button>
+                                            <input type="date" name="checkOutDate"
+                                                class="hidden-date-input check-out-date" required>
+                                        </div>
+                                        <div class="error-message check-out-error">Please select a valid check-out date.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control guest-count" placeholder="Number of guests"
+                                        min="1" max="20" required>
+                                    <div class="error-message guest-error">Please enter a valid number of guests (1-20).
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select guest-house" required>
+                                        <option value="">Select one of our Guest Houses</option>
+                                        <option value="house1">Guest House 1 - Luxury Suite</option>
+                                        <option value="house2">Guest House 2 - Premium Villa</option>
+                                        <option value="house3">Guest House 3 - Executive Room</option>
+                                    </select>
+                                    <div class="error-message guest-house-error">Please select a guest house.</div>
+                                </div>
+                                <button type="submit" class="btn btn-custom w-100 submit-btn">
+                                    INQUIRY NOW <span class="arrow-icon">→</span>
+                                </button>
+                                <div class="mt-3 text-center text-success fw-bold success-message"
+                                    style="display: none;">
+                                    Your inquiry has been submitted successfully! We'll contact you shortly.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Review Section -->
+        <section class="sai-review-section" aria-labelledby="reviewSectionHeading">
+            <div class="container">
+                <header>
+                    <h2 class="heading-section__title" id="reviewSectionHeading">Our Happy Customers</h2>
+                    <p class="heading-section__description">
+                        A heartfelt collection of testimonials and appreciation from our amazing community.
+                    </p>
+                </header>
+
+                <!-- Swiper Container -->
+                <div class="swiper sai-swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Review Card 1 -->
+                        <div class="swiper-slide">
+                            <article class="sai-review-card" aria-label="Review by Amit Sharma">
+                                <header class="sai-review-header">
+                                    <div class="sai-review-user">
+                                        <strong>Amit Sharma</strong>
+                                    </div>
+                                </header>
+                                <div class="sai-review-stars mt-2" aria-label="5 out of 5 stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mt-2">
+                                    <p>
+                                        One of the best guest houses in Kolkata, its situated at a prime location in
+                                        Salt
+                                        Lake. The staff was incredibly polite, rooms were clean, and the location is
+                                        peaceful yet well-connected. Highly recommended for business travelers.
+                                    </p>
+                                </blockquote>
+                            </article>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="swiper-slide">
+                            <article class="sai-review-card" aria-label="Review by Jessica Turner">
+                                <header class="sai-review-header">
+                                    <div class="sai-review-user">
+                                        <strong>Jessica Turner (UK)</strong>
+                                    </div>
+                                </header>
+                                <div class="sai-review-stars mt-2" aria-label="4 out of 5 stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <blockquote class="mt-2">
+                                    <p>
+                                        Absolutely loved my stay here. It felt safe, homely, and the service was
+                                        top-notch. Great hospitality and delicious home-cooked food. A perfect place if
+                                        you're visiting Kolkata in India solo!
+                                    </p>
+                                </blockquote>
+                            </article>
+                        </div>
+
+                        <!-- Review Card 3 -->
+                        <div class="swiper-slide">
+                            <article class="sai-review-card" aria-label="Review by Ravi Dasgupta">
+                                <header class="sai-review-header">
+                                    <div class="sai-review-user">
+                                        <strong>Ravi Dasgupta</strong>
+                                    </div>
+                                </header>
+                                <div class="sai-review-stars mt-2" aria-label="5 out of 5 stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mt-2">
+                                    <p>
+                                        Sai International guest house was very well maintained, unlike most
+                                        other guest house I have stayed. AC and Wi-Fi worked perfectly. A good option
+                                        for
+                                        families visiting Kolkata with family. Parking space could be better though.
+                                    </p>
+                                </blockquote>
+                            </article>
+                        </div>
+
+                        <!-- Review Card 4 -->
+                        <div class="swiper-slide">
+                            <article class="sai-review-card" aria-label="Review by Paul Kim">
+                                <header class="sai-review-header">
+                                    <div class="sai-review-user">
+                                        <strong>Paul Kim (U.S)</strong>
+                                    </div>
+                                </header>
+                                <div class="sai-review-stars mt-2" aria-label="5 out of 5 stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mt-2">
+                                    <p>
+                                        This was my first time in Kolkata, India and this guest house made it
+                                        comfortable and welcoming. Clean bathrooms, excellent security, and staff helped
+                                        with everything from cabs to translation.
+                                    </p>
+                                </blockquote>
+                            </article>
+                        </div>
+
+                        <!-- Review Card 5 -->
+                        <div class="swiper-slide">
+                            <article class="sai-review-card" aria-label="Review by Surbhi Jain">
+                                <header class="sai-review-header">
+                                    <div class="sai-review-user">
+                                        <strong>Surbhi Jain</strong>
+                                    </div>
+                                </header>
+                                <div class="sai-review-stars mt-2" aria-label="5 out of 5 stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <blockquote class="mt-2">
+                                    <p>
+                                        Me and my husband stayed here for 3 nights and absolutely loved it. It's
+                                        one of the few couple-friendly guest houses in the area that actually feels
+                                        premium
+                                        and private.
+                                    </p>
+                                </blockquote>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Complimentary Service Section -->
+        <section class="facility-section py-5">
+            <div class="container">
+                <div class="mb-4 mb-lg-5">
+                    <h2 class="heading-section__title">Complimentary Services</h2>
+                    <p class="heading-section__description">
+                        At Sai International, we believe in making your stay feel like home—only better.
+                        From a refreshing welcome drink on arrival to a hearty complimentary breakfast,
+                        every little detail is designed with your comfort in mind. Take advantage of free car parking,
+                        24×7 support from our dedicated caretaker, and a toiletry kit in every room.
+                        Because at our guest house, your experience matters.
+                    </p>
+                </div>
+
+                <!-- Swiper Wrapper -->
+                <div class="swiper complimentarySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Card 1 -->
+                        <div class="swiper-slide">
+                            <div class="facility-card h-100">
+                                <img loading="lazy" src="./assets/images/service1.png" class="img-fluid facility-img"
+                                    alt="Resort Room">
+                                <div class="facility-content p-3 p-lg-4">
+                                    <h5 class="facility-title">Breakfast</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="swiper-slide">
+                            <div class="facility-card h-100">
+                                <img loading="lazy" src="./assets/images/service2.png" class="img-fluid facility-img"
+                                    alt="Holiday Room">
+                                <div class="facility-content p-3 p-lg-4">
+                                    <h5 class="facility-title">Snacks</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="swiper-slide">
+                            <div class="facility-card h-100">
+                                <img loading="lazy" src="./assets/images/toiletry-kit.avif"
+                                    class="img-fluid facility-img" alt="Holiday Room 2">
+                                <div class="facility-content p-3 p-lg-4">
+                                    <h5 class="facility-title">Toiletry Kit</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="swiper-slide">
+                            <div class="facility-card h-100">
+                                <img loading="lazy" src="./assets/images/service3.png" class="img-fluid facility-img"
+                                    alt="Caretaker Service">
+                                <div class="facility-content p-3 p-lg-4">
+                                    <h5 class="facility-title">Car Parking</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Promo Banner Section -->
+        <section class="promo-banner-section">
+            <div class="container">
+                <h1 class="heading-section__title">Book Your Special Stay at Special Discount
+                </h1>
+                <p class="promo-text">
+                    Sai International offers you the perfect blend of comfort, privacy, and premium hospitality. Whether
+                    you’re a solo traveler or a couple searching for a peaceful couple guest house, we provide
+                    thoughtfully designed rooms with 24×7 guest room service to make your stay feel just like home.
+                    Enjoy your retreat at an affordable guest house without compromising on quality — book your stay
+                    today at one of the most trusted guest houses in Kolkata.
+
+                </p>
+                <a href="./contact.html" class="btn promo-btn">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Contact Floating Button -->
+        <div class="floating-buttons">
+            <!-- Call Floating Button -->
+            <a href="tel:+917980273844" target="_blank" class="floating__btn call-button">
+                <i class="bi bi-telephone-fill"></i>
+            </a>
+
+            <!-- WhatsApp Floating Button -->
+            <a href="https://wa.me/917980273844?text=Hi%2C%20I%20would%20like%20to%20inquire%20about%20room%20availability%20and%20booking%20details%20at%20Sai%20International%20Guest%20House."
+                target="_blank" class="floating__btn whatsapp-button">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+        </div>
+
+
+        <!-- Scroll to Top Button -->
+        <div class="scroll-to-top">
+            <button class="scroll-btn" id="scrollToTopBtn" aria-label="Scroll to top">
+                <svg class="progress-circle" viewBox="0 0 36 36">
+                    <circle class="progress-circle-bg" cx="18" cy="18" r="15.9155"></circle>
+                    <circle class="progress-circle-fill" cx="18" cy="18" r="15.9155" stroke-dasharray="100 100"
+                        stroke-dashoffset="100" id="progressCircle"></circle>
+                </svg>
+                <i class="bi bi-arrow-up scroll-icon"></i>
+            </button>
+        </div>
+
+        <!-- YouTube Modal -->
+        <div class="modal fade" id="youtubeModal" tabindex="-1" aria-labelledby="youtubeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="youtubeModalLabel">Watch Our Video</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="youtubeVideo" src="" title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="sai-footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <img loading="lazy" src="./assets/images/footer-logo.svg" alt="Sai International Logo"
+                        class="sai-logo mb-3">
+                    <p class="footer-text">Stay at Sai International – an affordable guest house in Kolkata with 24×7
+                        guest room
+                        service,
+                        comfort, and a homely vibe.
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/rooms.html"> Rooms</a></li>
+                        <li><a href="/gallery.html"> Gallery</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h5>Contact Information</h5>
+
+                    <p>
+                        <i class="bi bi-geo-alt-fill me-2"></i>
+                        AC-70 Salt Lake, Sector I,<br>
+                        Near 3 No. Island,
+                        Kolkata – 700064,<br> West Bengal, India
+                    </p>
+
+                    <p>
+                        <i class="bi bi-telephone-fill me-2"></i>
+                        <a href="tel:+917980273844">+91 7980273844</a>
+
+                    </p>
+
+                    <p>
+                        <i class="bi bi-envelope-fill me-2"></i>
+                        <a href="mailto:saiinternationalac70@gmail.com">saiinternationalac70@gmail.com</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Connect with Us</h5>
+                    <div class="sai-social-icons">
+                        <a href="https://wa.me/917980273844" target="_blank"><i class="bi bi-whatsapp"></i></a> <a
+                            href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube" data-bs-toggle="modal"
+                                data-bs-target="#youtubeModal"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sai-bottom-bar mt-4">
+                <p>Copyright © 2025 <strong>- Sai International </strong>| Developed by <a
+                        href="https://intellij.in">IntelliJ Technologies</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/booking-form.js" defer></script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
