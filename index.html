@@ -103,43 +103,46 @@
         </section>
 
 
-        <!-- Booking Form -->
-        <section class="booking-form-wrapper" aria-labelledby="booking-form-title">
-            <header class="booking-form-header">
-                <h3 id="booking-form-title">Book Your Perfect Stay</h3>
-                <p>Complete the form below to check availability</p>
-            </header>
-
-            <form class="booking-form" id="bookingForm">
-                <input type="text" name="fullName" placeholder="Full Name" required />
-                <input type="tel" name="mobileNumber" placeholder="Mobile Number" required />
-                <input type="text" name="numRooms" placeholder="Number of Rooms" pattern="[0-9]+" required />
-                <input type="text" name="numPeople" placeholder="Number of People" pattern="[0-9]+" required />
-                <input type="email" name="email" placeholder="Email" required />
-
-                <div class="date-input-wrapper">
-                    <button type="button" class="date-input-btn" id="checkInBtn">
-                        <i class="fas fa-calendar-alt date-icon"></i>
-                        <span class="date-text" id="checkInText">Check-in Date</span>
-                    </button>
-                    <input type="date" name="checkIn" id="checkInInput" class="hidden-date-input" required>
-                </div>
-
-                <div class="date-input-wrapper">
-                    <button type="button" class="date-input-btn" id="checkOutBtn">
-                        <i class="fas fa-calendar-alt date-icon"></i>
-                        <span class="date-text" id="checkOutText">Check-out Date</span>
-                    </button>
-                    <input type="date" name="checkOut" id="checkOutInput" class="hidden-date-input" required>
-                </div>
-
-                <button type="submit" class="inquire-btn booking-submit-btn">INQUIRE NOW</button>
-
-                <div class="mt-3 text-center text-success fw-bold success-msg" style="display: none;">
-                    Your inquiry has been submitted successfully! We'll contact you shortly.
-                </div>
-            </form>
-        </section>
+       <!-- Booking Form -->
+<section class="booking-form-wrapper" aria-labelledby="booking-form-title">
+    <header class="booking-form-header">
+      <h3 id="booking-form-title">Book Your Perfect Stay</h3>
+      <p>Complete the form below to check availability</p>
+    </header>
+  
+    <form name="bookingForm" method="POST" data-netlify="true" class="booking-form">
+      <!-- Required hidden input for Netlify -->
+      <input type="hidden" name="form-name" value="bookingForm" />
+  
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="tel" name="mobileNumber" placeholder="Mobile Number" required />
+      <input type="text" name="numRooms" placeholder="Number of Rooms" pattern="[0-9]+" required />
+      <input type="text" name="numPeople" placeholder="Number of People" pattern="[0-9]+" required />
+      <input type="email" name="email" placeholder="Email" required />
+  
+      <div class="date-input-wrapper">
+        <button type="button" class="date-input-btn" id="checkInBtn">
+          <i class="fas fa-calendar-alt date-icon"></i>
+          <span class="date-text" id="checkInText">Check-in Date</span>
+        </button>
+        <input type="date" name="checkIn" id="checkInInput" class="hidden-date-input" required>
+      </div>
+  
+      <div class="date-input-wrapper">
+        <button type="button" class="date-input-btn" id="checkOutBtn">
+          <i class="fas fa-calendar-alt date-icon"></i>
+          <span class="date-text" id="checkOutText">Check-out Date</span>
+        </button>
+        <input type="date" name="checkOut" id="checkOutInput" class="hidden-date-input" required>
+      </div>
+  
+      <button type="submit" class="inquire-btn booking-submit-btn">INQUIRE NOW</button>
+  
+      <div class="mt-3 text-center text-success fw-bold success-msg" style="display: none;">
+        Your inquiry has been submitted successfully! We'll contact you shortly.
+      </div>
+    </form>
+  </section>
 
 
         <!-- comfort section -->
